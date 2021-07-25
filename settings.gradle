@@ -1,0 +1,3 @@
+include ':instantapp'
+include ':app'
+rootProject.name = "Instant app ex"
