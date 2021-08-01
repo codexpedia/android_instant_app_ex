@@ -23,12 +23,4 @@
         </activity>
     </application>
 
-    <dist:module
-        dist:instant="true"
-        dist:title="@string/title_instantapp">
-        <dist:delivery>
-            <dist:install-time />
-        </dist:delivery>
-        <dist:fusing dist:include="false" />
-    </dist:module>
 </manifest>

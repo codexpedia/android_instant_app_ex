@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.dynamic-feature'
+    id 'com.android.application'
     id 'kotlin-android'
 }
 android {
@@ -8,17 +8,11 @@ android {
 
     defaultConfig {
         applicationId "com.example.instantappex"
-        minSdkVersion 16
+        minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     buildTypes {
@@ -30,7 +24,6 @@ android {
 }
 
 dependencies {
-    implementation project(":app")
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.6.0'
 
@@ -44,6 +37,4 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     implementation 'com.google.android.gms:play-services-instantapps:17.0.0'
-    implementation 'com.google.android.gms:play-services:12.0.1'
-    implementation 'com.android.support:multidex:1.0.3'
 }
